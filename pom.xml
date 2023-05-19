@@ -14,21 +14,31 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-
     <dependencies>
 
-      <!-- Buraya eklediklerimiz ne yapıyor? Gizli .m2 klasöründe varsa bağımlılıkları getiriyor
-      yoksa internetten maven repo'ya bağlanıyor ordan çekip getiriyor. -->
-      <!-- JUnit ==> Java Unit Test -->
-      <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version> <!-- release: en son versiyon -->
-            <scope>test</scope> <!-- sadece test senaryolarında kullanılacak bu kütüpane -->
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- DAY03 MOCKITO https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>4.5.1</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- DAY03 MOCKITO https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>4.5.1</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
-
 
 </project>
